@@ -16,10 +16,14 @@
 
 <script>
 	var n1 = 1545.5
+	var n2 = 554.5
+	var soma = n1 + n2
+	document.write(`${n1.toLocaleString('pt-BR', {style: 'currency',currency: 'BRL'})} + ${n2.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} = ${soma.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}</br>`)
+	n1 = 500
+	n2 = 700
+	document.write(`${n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})} + ${n2.toLocaleString('pt', {style: 'currency', currency: 'USD'})} = ${soma.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})}</br>`)
 	document.write(`${n1.toFixed(2)}</br>`)
 	document.write(`${n1.toFixed(2).replace('.', ',')}</br>`)
-	document.write(`${n1.toLocaleString('pt-BR', {style: 'currency',currency: 'BRL'})}</br>`)
-	document.write(`${n1.toLocaleString('pt-BR', {style: 'currency',currency: 'USD'})}`)
 
 
 </script>
